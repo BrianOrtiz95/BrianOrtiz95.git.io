@@ -11,7 +11,7 @@ body {
     background-color: rgb(39, 39, 39);
     justify-content: flex-end;    
     border-radius: 5px; 
-    box-shadow: 00px 5px 25px rgba(229, 176, 2, 0.5);
+    box-shadow: 0 20px 50px -10px rgba(229, 176, 2, 0.5);
   
 }
 .signature{
@@ -204,11 +204,135 @@ body#about{
   }
 
 body#portfolio{
-  background-image: url("images/bg3.jpg"); 
+  background-image: url("images/portbg2.jpg"); 
   background-size: cover; 
-  background-repeat: no-repeat;      
+  background-repeat: no-repeat;   
+}
+#portfolio .top-container{
+  position:sticky;
+  top:0;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(39, 39, 39);
+  justify-content: flex-end;    
+  border-radius: 5px; 
+  box-shadow: 0 30px 40px -10px rgba(2, 142, 229, 0.5);
+}
+
+#portfolio .project-container{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, rgb(254, 2, 166, 0.3) 0% 8%,  rgb(146, 2, 229,0.3)16% 24%,rgba(2, 168, 229,0.3)45% 68%, rgb(146, 2, 229,0.3) 76% 84%, rgb(254, 2, 166,0.3) 92% 100%);    
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;    
+    margin-top: 70px;
+}
+#portfolio .project-container img{
+  width:270px;
+  height:270px;
+  border: 5px solid #000000;
+  border-radius: 15px;
+}
+#portfolio .project-names{
+  display: flex;
+  flex-direction: row;  
+  padding-left:235px;
+  padding-right:200px;
+  background-color: rgb(0,0,0);  
+  box-shadow: 00px 10px 25px -10px rgb(52, 255, 1);  
+  margin-top: 0px;  
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+#portfolio .project-names p{   
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size: 25px;
+  font-family: 'Arial', monospace;
+  color: rgb(241, 235, 235);    
+}
+#portfolio .pettext{
+  padding-right:265px;
+}
+#portfolio .sheltertext{
+  padding-right:20px;
+}
+#portfolio .blackjacktext{
+  padding-right:35px;
+  padding-left:240px;
+}
+#portfolio .garagetext{
+  padding-right:0px;
+  margin-left:295px;  
+}
+#portfolio .project-info{
+display: flex;
+flex-direction: row;  
+/* text-align: center; */
+/* background-color: gray; */
+margin-top:10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left:50px;
+padding-right:50px;
+}
+#portfolio .project-info p{
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size: 15px;
+  font-family: 'Arial', monospace;
+  color: rgb(241, 235, 235);   
+}
+#portfolio .petinfo{
+  border: 2px solid #ffffff;
+  background-color: black;
+  text-align: justify;
+  /* background-color: red; */
+  margin-left:45px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
  
 }
+#portfolio .shelterinfo{
+  
+  text-align: justify;
+  border: 2px solid #ffffff;
+  background-color: black;
+  /* background-color: skyblue; */
+  padding-left:10px;
+  padding-right:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:10px;
+}
+#portfolio .blackjackinfo{
+  border: 2px solid #ffffff;
+  background-color: black;
+  text-align: justify;
+  /* background-color: yellow; */
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:15px;
+}
+#portfolio .garageinfo{
+  border: 2px solid #ffffff;
+  background-color: black;
+  text-align: justify;
+  /* background-color: green; */
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:20px;
+}
+
 body#experience{
   background-image: url("images/bg3.jpg"); 
   background-size: cover; 
@@ -217,6 +341,5 @@ body#experience{
 body#contact{
   background-image: url("images/bg3.jpg"); 
   background-size: cover; 
-  background-repeat: no-repeat;      
- 
+  background-repeat: no-repeat;  
 }
